@@ -1,0 +1,25 @@
+#spring:
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/spring_ppmt?serverTimezone=Asia/Seoul
+#    username: kdm
+#    password: dksanf01
+#  jpa:
+#    database-platform: org.hibernate.dialect.MySQL5Dialect
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.MySQL5Dialect
+#    hibernate:
+#      ddl-auto: update
+
+spring:
+  datasource:
+    url: jdbc:mysql://us-cdbr-east-03.cleardb.com/heroku_4855e1dfe514f0b?reconnect=true
+    username: b0ebc3add85830
+    password: c3b61d6d
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    hibernate:
+      ddl-auto: update
+server:
+  port: ${PORT:8080}
